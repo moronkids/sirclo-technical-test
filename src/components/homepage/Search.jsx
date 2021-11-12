@@ -80,7 +80,7 @@ function Track({ search, loading, searchTrack, searchTrackLoad }) {
                 const img = val.image[1]["#text"];
                 return (
                   <div className="group rounded-md border gray-100 h-auto p-2 mb-2 shadow-md bg-white hover:bg-green-200">
-                    <div className="grid grid-cols-6 grid-flow-row w-full h-auto auto-cols-auto">
+                    <div className="grid grid-cols-6 grid-flow-row w-full h-auto auto-cols-auto gap-x-2">
                       <div
                         className="col-auto"
                         style={{

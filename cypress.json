@@ -1,0 +1,5 @@
+{
+  "port": 3001,
+  "defaultCommandTimeout": 15000,
+  "video": false
+}

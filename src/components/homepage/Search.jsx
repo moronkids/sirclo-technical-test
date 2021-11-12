@@ -8,7 +8,10 @@ function Track({ search, loading, searchTrack, searchTrackLoad }) {
   }, [tabs, loading, search]);
   return (
     <>
-      <div className="border border-gray-200 text-gray-400 bg-purple-100 p-5 shadow-xl rounded-b-xl h-3/4 overflow-y-scroll">
+      <div
+        data-testid="search-component"
+        className="border border-gray-200 text-gray-400 bg-purple-100 p-5 shadow-xl rounded-b-xl h-3/4 overflow-y-scroll"
+      >
         Search Keyword :&nbsp;{searchValue}
         {tabs === "artist" && (
           <div className="py-4">

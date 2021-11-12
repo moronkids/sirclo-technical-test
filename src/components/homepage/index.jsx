@@ -79,6 +79,7 @@ function Index({
               <div className="grid grid-cols-4">
                 <div className="col-start-1 col-end-4">
                   <input
+                    id="search-component"
                     type="text"
                     className="h-8 outline-none text-gray-700 w-full"
                     placeholder="Search artis or music....."

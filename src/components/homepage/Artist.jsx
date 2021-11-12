@@ -37,7 +37,10 @@ function Artist({ artist, loading }) {
 
   return (
     <>
-      <div className="border border-gray-200 bg-gray-100 p-5 shadow-xl rounded-b-xl h-3/4 overflow-y-scroll">
+      <div
+        data-testid="artist-component"
+        className="border border-gray-200 bg-gray-100 p-5 shadow-xl rounded-b-xl h-3/4 overflow-y-scroll"
+      >
         <div className="py-4">
           {artist?.topartists.artist.map((val, i) => {
             const img = val.image[1]["#text"];
@@ -89,6 +92,7 @@ function Artist({ artist, loading }) {
                 <>
                   {back === true && i === 0 && (
                     <div
+                      id="back-btn-artist"
                       class={`text-white rounded-full h-14 w-14 flex items-center justify-center bg-indigo-400`}
                       onClick={() => {
                         setPage_(val);
@@ -100,6 +104,7 @@ function Artist({ artist, loading }) {
                   )}
                   {val === page[page.length - 1] && i === page.length - 1 && (
                     <div
+                      id="next-btn-artist"
                       class="text-white rounded-full h-14 w-14 flex items-center justify-center bg-indigo-400"
                       onClick={() => {
                         setPage_(val);

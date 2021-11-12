@@ -37,7 +37,10 @@ function Track({ song, loading }) {
   };
   return (
     <>
-      <div className="border border-gray-200 bg-purple-100 p-5 shadow-xl rounded-b-xl h-3/4 overflow-y-scroll">
+      <div
+        data-testid="track-component"
+        className="border border-gray-200 bg-purple-100 p-5 shadow-xl rounded-b-xl h-3/4 overflow-y-scroll"
+      >
         <div className="py-4">
           {loading ? (
             <div className="flex flex-col justify-center content-center w-full h-full items-center">
@@ -100,6 +103,7 @@ function Track({ song, loading }) {
                   <>
                     {back === true && i === 0 && (
                       <div
+                        id="back-btn-track"
                         class={`text-white rounded-full h-14 w-14 flex items-center justify-center bg-indigo-400`}
                         onClick={() => {
                           setPage_(val);
@@ -111,6 +115,7 @@ function Track({ song, loading }) {
                     )}
                     {val === page[page.length - 1] && i === page.length - 1 && (
                       <div
+                        id="next-btn-track"
                         class="text-white rounded-full h-14 w-14 flex items-center justify-center bg-indigo-400"
                         onClick={() => {
                           setPage_(val);

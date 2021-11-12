@@ -74,7 +74,7 @@ function Artist({ artist, loading }) {
                     <div className="text-gray-700 group-hover:text-gray-500">
                       {val.name}
                     </div>
-                    <div className="text-gray-300 group-hover:text-gray-500">
+                    <div className="text-gray-300 group-hover:text-gray-500 truncate">
                       {val.url}
                     </div>
                   </div>

@@ -49,7 +49,7 @@ function Track({ search, loading, searchTrack, searchTrackLoad }) {
                         <div className="text-gray-700 group-hover:text-gray-500">
                           {val.name}
                         </div>
-                        <div className="text-gray-300 group-hover:text-gray-500 whitespace-nowrap break-words truncate">
+                        <div className="text-gray-300 group-hover:text-gray-500 whitespace-nowrap truncate">
                           {val.url}
                         </div>
                       </div>
